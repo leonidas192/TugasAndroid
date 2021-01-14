@@ -1,7 +1,9 @@
 package com.example.lbsanendyoananto_11512;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -14,6 +16,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
+    @Nullable
+    @Override
+    public ActionBar getActionBar() {
+        return super.getActionBar();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
